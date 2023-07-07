@@ -1,0 +1,28 @@
+:root {
+  --primary: #AAC8A7;
+  --secondary-color: #C9DBB2;
+  --tertiary-color: #E3F2C1;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
+}
+.nav__content-list {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

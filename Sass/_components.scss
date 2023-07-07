@@ -1,0 +1,19 @@
+
+//////////////////////////
+//-----NAVIGATION BAR-----
+
+.nav {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+    
+    &__logo{
+
+    }
+    &__content-list {
+        display: none;
+    }
+    &__menu {
+
+    }
+}
