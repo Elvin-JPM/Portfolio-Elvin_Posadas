@@ -1,0 +1,98 @@
+//////////////////////////
+//-----NAVIGATION BAR-----
+
+.nav {
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
+
+  &__logo {
+  }
+  &__content-list {
+    display: none;
+  }
+  &__menu {
+  }
+}
+
+.navigation {
+    
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    background-color: white;
+    height: 4.5rem;
+    width: 4.5rem;
+    position: fixed;
+    top: 1.2rem;
+    right: 1.2rem;
+    border-radius: 50%;
+    z-index: 2000;
+  }
+
+  &__background {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-image: radial-gradient(
+      var(--color-tertiary),
+      var(--color-primary)
+    );
+    z-index: 1000;
+    transform: scale(30);
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    margin: 1.5rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.5rem;
+      font-weight: 300;
+      padding: 0.5rem 1rem;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        120deg,
+        transparent,
+        orangered 0%,
+        orangered 50%,
+        white 100%
+      );
+      background-size: 230%;
+      transition: all .3s;
+    }
+
+    &:hover,
+    &:active {
+        background-position: 100%;
+        color: black;
+    }
+  }
+}
