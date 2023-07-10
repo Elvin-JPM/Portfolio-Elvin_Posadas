@@ -13,28 +13,59 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
-  <body>
 
+  <body>
     <header class="header">
       <nav class="nav">
-        <div class="nav__logo">logo</div>
-
-        <div class="nav__content-list">
-          <div class="nav__content-list__description">Description</div>
-          <div class="nav__content-list__skills">Skills</div>
-          <div class="nav__content-list__form">Sign Up</div>
-          <div class="nav__content-list__contact">Contact Me</div>
+        <div class="nav__search-bar">
+          <div class="nav__logo">
+            <p class="nav__floating-logo">EP</p>
+          </div>
         </div>
 
         <div class="nav__menu">
-          <div class="nav__menu--upper-bar"></div>
+          <input
+            type="checkbox"
+            class="nav__menu__checkbox"
+            id="navi-toggle"
+          />
+
+          <label for="navi-toggle" class="nav__menu__button">
+            <span class="nav__menu__icon"></span>
+          </label>
+
+          <div class="nav__menu__background">&nbsp;</div>
+
+          <div class="nav__menu__nav">
+            <ul class="nav__menu__list">
+              <li class="nav__menu__item">
+                <a href="#" class="nav__menu__link">Skills</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="#" class="nav__menu__link">Sing Up</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="#" class="nav__menu__link">About Me</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="#" class="nav__menu__link">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </nav>
     </header>
 
     <main class="content">
-      <section id="presentation">
-        <div class="about__me"></div>
+      <section class="presentation">
+        <div class="about-me">
+          <p class="about-me__name">Hi, I'm Elvin</p>
+          <div class="about-me__description">
+            <p>a software</p>
+            <span class="about-me__description--flowing-text">developer</span>
+          </div>
+        </div>
         <div class="avatar"></div>
       </section>
 

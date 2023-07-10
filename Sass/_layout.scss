@@ -1,17 +1,19 @@
 //////////////////////////
 //-----NAVIGATION BAR-----
 
-.nav {
-  display: flex;
-  margin: 1rem;
-  justify-content: space-between;
+.header {
+    width: 100vw;
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    z-index: 100;
+}
 
-  &__logo {
-  }
-  &__content-list {
-    display: none;
-  }
-  &__menu {
-  }
+.presentation {
+    height: 55vh;
+    background-image: linear-gradient(to right bottom,rgba(#001C30, 0.6), rgba(#176B87,0.8)) ,url('/images/programming-small.jpg');
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)
 }
 

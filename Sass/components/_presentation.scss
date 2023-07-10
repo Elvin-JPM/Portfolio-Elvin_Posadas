@@ -1,0 +1,45 @@
+//  ABOUT ME SECTION
+
+.about-me {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+
+  &__description {
+    &--flowing-text {
+      background: linear-gradient(
+        -45deg,
+        #ff9eaa,
+        #9bcdd2,
+        #ffe4a7,
+        var(--color-light)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 200%;
+      animation: animated-text 3s ease infinite;
+    }
+  }
+}
+
+//Animacion del texto de fondo
+@keyframes animated-text {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
