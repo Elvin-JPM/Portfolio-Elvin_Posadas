@@ -2,18 +2,30 @@
 //-----NAVIGATION BAR-----
 
 .header {
-    width: 100vw;
-    position: fixed;
-    top: 1rem;
-    left: 0;
-    z-index: 100;
+  width: 100vw;
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  z-index: 100;
 }
 
 .presentation {
-    height: 55vh;
-    background-image: linear-gradient(to right bottom,rgba(#001C30, 0.6), rgba(#176B87,0.8)) ,url('/images/programming-small.jpg');
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)
+  height: 55vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#001c30, 0.6),
+      rgba(#176b87, 0.8)
+    ),
+    url("/images/programming-small.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 2rem;
+}
