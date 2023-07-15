@@ -6,7 +6,7 @@
   align-items: center;
 
   height: 16rem;
-  width: 60%;
+  width: 55%;
   background: linear-gradient(
     to right bottom,
     var(--color-primary),
@@ -14,7 +14,7 @@
   );
   border: 1px solid var(--color-light);
   border-radius: 4px;
-  box-shadow: 1px 0 3px 1px rgba(#dafffb, 0.2);
+  box-shadow: 3px 3px 5px 4px rgba(#dafffb, 0.4);
   text-transform: uppercase;
   padding-bottom: 0.5rem;
 
@@ -22,6 +22,7 @@
     font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 0.5rem;
+    margin: .3rem 0;
   }
 
   &__image {
@@ -47,6 +48,26 @@
 }
 
 .skills {
+  &__computer-icon {
+    height: 5rem;
+    width: 5rem;
+    z-index: 1000000;
+    position: absolute;
+    left:-.8rem;
+    top: 3rem;
+    rotate: 20deg;
+  }
+
+  &__language-icon {
+    height: 5rem;
+    width: 5rem;
+    z-index: 1000000;
+    position: absolute;
+    right:-.8rem;
+    bottom: 30rem;
+    rotate: 20deg;
+  }
+
   &__heading {
     font-size: 2rem;
     letter-spacing: 0.5rem;

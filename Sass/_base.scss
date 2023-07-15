@@ -3,6 +3,10 @@
   --color-secondary: #176b87;
   --color-tertiary: #64ccc5;
   --color-light: #dafffb;
+  --color-teal: #35A29F;
+
+  --color-yellow-light: #E9B384;
+  --color-yellow-dark: #F3AA60;
 }
 
 * {
@@ -12,7 +16,8 @@
 }
 
 body {
-  background-color: var(--color-primary);
+  //background-color: var(--color-primary);
+  background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-secondary));
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
   font-weight: 400;

@@ -65,14 +65,15 @@
       </section>
 
       <section class="skills">
-        <h2 class="skills__heading">SKILLS</h2>
+        <img src="/images/desktop.png" alt="desktop computer" class="skills__computer-icon">
+        <img src="/images/foreign-language.png" alt="desktop computer" class="skills__language-icon">
 
-        <iframe src="https://giphy.com/embed/R03zWv5p1oNSQd91EP"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <h2 class="skills__heading">SKILLS</h2>
 
         <div class="card skills__css">
           <div class="card__title">css</div>
           <img
-            src="/images/css.png"
+            src="/images/css-logo.png"
             alt="css card"
             class="card__image"
           />
@@ -98,7 +99,7 @@
         <div class="card skills__python">
           <div class="card__title">python</div>
           <img
-            src="/images/python.jpg"
+            src="/images/python.png"
             alt="javascript"
             class="card__image"
           />
@@ -107,11 +108,98 @@
             <div class="skills__python--bar"></div>
           </div>
         </div>
-        <iframe src="https://giphy.com/embed/l2Sq2zPVz6FLD6Z5S" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+        <div class="card skills__python">
+          <div class="card__title">English</div>
+          <img
+            src="/images/united-states.png"
+            alt="javascript"
+            class="card__image"
+          />
+          <div class="card__level">
+            <p class="card__level--text">Level</p>
+            <div class="skills__python--bar"></div>
+          </div>
+        </div>
+
+        <div class="card skills__python">
+          <div class="card__title">German</div>
+          <img
+            src="/images/germany.png"
+            alt="javascript"
+            class="card__image"
+          />
+          <div class="card__level">
+            <p class="card__level--text">Level</p>
+            <div class="skills__python--bar"></div>
+          </div>
+        </div>
+
+
         </div>
       </section>
 
-      <section class="form"></section>
+      <section class="form-section">
+        <h2 class="form-section__heading">Sign Up</h2>
+        <form action="" class="form">
+
+          <div class="form__text-input form__first-name">
+            <label for="first_name" class="form__label">First Name</label>
+            <input type="text" class="form__input" id="first_name" name="input_first_name" placeholder="First Name">
+          </div>
+
+          <div class="form__text-input form__last-name">
+            <label for="last_name" class="form__label">Last Name</label>
+            <input type="text" class="form__input" id="last_name" name="input_last_name" placeholder="Last Name">
+          </div>
+
+          <div class="form__text-input form__phone-number">
+            <label for="phone_number" class="form__label">Phone Number</label>
+            <input type="tel" class="form__input" id="phone_number" name="input_phone_number" placeholder="Ex: +504 12345678">
+          </div>
+
+          <fieldset class="form_fieldset">
+            <legend>How did we met?</legend>
+            <div class="form__radio-button">
+              <input type="radio" id="college" name="meet" value="college">
+              <label for="college">College</label>
+            </div>
+            <div class="form__radio-button">
+              <input type="radio" id="kc_kickoff" name="meet" value="keepocoding kickoff">
+              <label for="kc_kickoff">Keepcoding Kickoff</label>
+            </div>
+            <div class="form__radio-button">
+              <input type="radio" id="highschool" name="meet" value="highschool">
+              <label for="highschool">High School</label>
+            </div>
+            <div class="form__radio-button">
+              <input type="radio" id="github" name="meet" value="github">
+              <label for="github">Github</label>
+            </div>
+          </fieldset>
+
+          <div class="form__text-input form__github">
+              <label for="github_user">Github</label>
+              <input type="text" class="form__input" id="github_user" name="meet" pattern="^@[^\s]+”" placeholder="@username">
+          </div>
+
+          <div class="form__text-input">
+              <label for="more_info">More info</label>
+              <textarea name="more" class="form__textarea" id="more_info" cols="30" rows="10" maxlength="180"></textarea>
+          </div>
+
+          <div class="form__checkbox">
+              <input type="checkbox" id="newsletter">
+              <label for="newsletter">Subscribe to the newsletter</label>
+          </div>
+
+          <div class="form__buttons">
+              <input type="submit" value="Submit" class="form__button form__submit-button">
+              <input type="reset" value="Reset" class="form__button form__reset-button">
+          </div>
+
+        </form>
+      </section>
     </main>
 
     <footer class="footer"></footer>
