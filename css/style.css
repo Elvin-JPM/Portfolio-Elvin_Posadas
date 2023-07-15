@@ -3,9 +3,9 @@
   --color-secondary: #176b87;
   --color-tertiary: #64ccc5;
   --color-light: #dafffb;
-  --color-teal: #35A29F;
-  --color-yellow-light: #E9B384;
-  --color-yellow-dark: #F3AA60;
+  --color-teal: #35a29f;
+  --color-yellow-light: #e9b384;
+  --color-yellow-dark: #f3aa60;
 }
 
 * {
@@ -288,7 +288,6 @@ body {
 .skills__computer-icon {
   height: 5rem;
   width: 5rem;
-  z-index: 1000000;
   position: absolute;
   left: -0.8rem;
   top: 3rem;
@@ -297,11 +296,10 @@ body {
 .skills__language-icon {
   height: 5rem;
   width: 5rem;
-  z-index: 1000000;
   position: absolute;
   right: -0.8rem;
   bottom: 30rem;
-  rotate: 20deg;
+  rotate: -20deg;
 }
 .skills__heading {
   font-size: 2rem;
@@ -310,35 +308,33 @@ body {
 .skills__heading:hover {
   transform: skewX(-10deg);
 }
-.skills__css--bar {
+.skills__bar {
   height: 0.5rem;
   width: 60%;
   border-radius: 5px;
   border: 1px solid var(--color-tertiary);
   background-image: linear-gradient(90deg, white 0%, white 50%, transparent 50%, transparent 100%);
   background-size: 200%;
+}
+.skills__css--bar {
   background-position: 30%;
   animation: css-progress-bar-animation 1s linear;
 }
 .skills__javascript--bar {
-  height: 0.5rem;
-  width: 60%;
-  border-radius: 5px;
-  border: 1px solid var(--color-tertiary);
-  background-image: linear-gradient(90deg, white 0%, white 50%, transparent 50%, transparent 100%);
-  background-size: 200%;
   background-position: 70%;
   animation: js-progress-bar-animation 1s linear;
 }
 .skills__python--bar {
-  height: 0.5rem;
-  width: 60%;
-  border-radius: 5px;
-  border: 1px solid var(--color-tertiary);
-  background-image: linear-gradient(90deg, white 0%, white 50%, transparent 50%, transparent 100%);
-  background-size: 200%;
   background-position: 40%;
   animation: py-progress-bar-animation 1s linear;
+}
+.skills__english--bar {
+  background-position: 10%;
+  animation: en-progress-bar-animation 1s linear;
+}
+.skills__german--bar {
+  background-position: 85%;
+  animation: ge-progress-bar-animation 1s linear;
 }
 @keyframes css-progress-bar-animation {
   0% {
@@ -367,10 +363,32 @@ body {
     background-position: 100%;
   }
   50% {
-    background-position: 85%;
+    background-position: 75%;
   }
   100% {
     background-position: 40%;
+  }
+}
+@keyframes en-progress-bar-animation {
+  0% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 55%;
+  }
+  100% {
+    background-position: 10%;
+  }
+}
+@keyframes ge-progress-bar-animation {
+  0% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 93%;
+  }
+  100% {
+    background-position: 85%;
   }
 }
 .form__text-input {
@@ -421,10 +439,19 @@ body {
   border: 1px solid var(--color-light);
 }
 .form__submit-button {
-  background-image: linear-gradient(to right bottom, var(--color-tertiary), #35A29F);
+  background-image: linear-gradient(to right bottom, var(--color-tertiary), #35a29f);
 }
 .form__reset-button {
   background-image: linear-gradient(to right bottom, var(--color-yellow-dark), var(--color-yellow-light));
+}
+
+.footer__social {
+  display: flex;
+  gap: 1rem;
+}
+.footer__logo {
+  width: 2rem;
+  height: 2rem;
 }
 
 .header {
@@ -457,7 +484,6 @@ body {
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
-  margin: 2rem 0;
   padding: 1rem;
   background-image: linear-gradient(to bottom right, rgba(0, 28, 48, 0.5), rgba(23, 107, 135, 0.8)), url(/images/mountains\ medium.jpg);
   clip-path: polygon(0% 8%, 100% 0%, 100% 100%, 0% 100%);
@@ -467,7 +493,7 @@ body {
   font-size: 2rem;
   letter-spacing: 0.5rem;
   margin-bottom: 1.5rem;
-  margin-top: 7rem;
+  margin-top: 3rem;
   color: var(--color-light);
 }
 .form-section__heading:hover {
@@ -479,6 +505,16 @@ body {
   align-items: left;
   max-width: 60%;
   gap: 1rem;
+  margin: 1rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.5rem;
+  background-color: var(--color-primary);
 }
 
 /*# sourceMappingURL=style.css.map */

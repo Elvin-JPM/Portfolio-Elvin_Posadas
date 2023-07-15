@@ -3,21 +3,30 @@
   --color-secondary: #176b87;
   --color-tertiary: #64ccc5;
   --color-light: #dafffb;
-  --color-teal: #35A29F;
+  --color-teal: #35a29f;
 
-  --color-yellow-light: #E9B384;
-  --color-yellow-dark: #F3AA60;
+  --color-yellow-light: #e9b384;
+  --color-yellow-dark: #f3aa60;
+}
+
+@mixin social-media-logo {
+  width: 2rem;
+  height: 2rem;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 body {
   //background-color: var(--color-primary);
-  background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-secondary));
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary),
+    var(--color-secondary)
+  );
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
   font-weight: 400;

@@ -1,0 +1,11 @@
+.footer {
+
+    &__social {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__logo {
+      @include social-media-logo;
+    }
+}
