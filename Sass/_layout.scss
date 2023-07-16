@@ -16,7 +16,7 @@
       rgba(#001c30, 0.6),
       rgba(#176b87, 0.8)
     ),
-    url("/images/programming-small.jpg");
+    url(../images/programming-small.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -43,7 +43,7 @@
       rgba(#001c30, 0.5),
       rgba(#176b87, 0.8)
     ),
-    url(/images/mountains\ medium.jpg);
+    url(../images/mountains\ medium.jpg);
   clip-path: polygon(0% 8%, 100% 0%, 100% 100%, 0% 100%);
   background-size: cover;
 
@@ -91,7 +91,7 @@
         rgba(#001c30, 0.6),
         rgba(#176b87, 0.8)
       ),
-      url("/images/programming-medium.jpg");
+      url(../images/programming-medium.jpg);
     background-size: cover;
     background-position: top;
     clip-path: none;
@@ -103,7 +103,7 @@
         rgba(#001c30, 0.5),
         rgba(#176b87, 0.8)
       ),
-      url(/images/mountains\ big.jpg);
+      url(../images/mountains\ medium.jpg);
     clip-path: none;
     background-size: cover;
 
@@ -121,7 +121,7 @@
         rgba(#001c30, 0.6),
         rgba(#176b87, 0.8)
       ),
-      url("/images/programming-large.jpg");
+      url(../images/programming-large.jpg);
     background-size: cover;
     background-position: top;
     clip-path: none;
@@ -136,7 +136,7 @@
         rgba(#001c30, 0.6),
         rgba(#176b87, 0.8)
       ),
-      url("/images/programming.jpg");
+      url(../images/programming.jpg);
     background-size: cover;
     background-position: top;
     clip-path: none;

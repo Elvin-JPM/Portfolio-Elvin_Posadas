@@ -75,7 +75,7 @@
   .form {
     width: 45%;
     &__label {
-      font-size: .8rem;
+      font-size: 0.8rem;
       color: white;
     }
 
@@ -92,7 +92,7 @@
 
     &__radio-button {
       gap: 0.4rem;
-      margin-bottom: .4rem;
+      margin-bottom: 0.4rem;
     }
 
     &__checkbox {
@@ -114,12 +114,12 @@
 
 @media (min-width: 1200px) {
   .form {
-      width: 30%;
+    width: 30%;
   }
 }
 
 @media (min-width: 1800px) {
   .form {
-      width: 30%;
+    width: 30%;
   }
 }
