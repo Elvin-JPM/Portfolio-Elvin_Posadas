@@ -43,3 +43,26 @@
     background-position: 0 50%;
   }
 }
+
+// Media Queries
+
+@media (min-width: 600px) {
+  .about-me {
+    margin: 0 2.5rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .about-me {
+    margin: 0 3.5rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-me {
+    margin: 0 5.5rem;
+    font-size: 3.8rem;
+  }
+}

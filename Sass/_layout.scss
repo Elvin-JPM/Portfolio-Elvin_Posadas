@@ -77,3 +77,49 @@
   gap: 0.5rem;
   background-color: var(--color-primary);
 }
+
+@media (min-width: 600px) {
+  .presentation {
+    height: 50vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#001c30, 0.6),
+        rgba(#176b87, 0.8)
+      ),
+      url("/images/programming-medium.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .presentation {
+    height: 50vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#001c30, 0.6),
+        rgba(#176b87, 0.8)
+      ),
+      url("/images/programming-large.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .presentation {
+    height: 50vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#001c30, 0.6),
+        rgba(#176b87, 0.8)
+      ),
+      url("/images/programming.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: none;
+  }
+}
+

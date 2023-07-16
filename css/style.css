@@ -247,6 +247,24 @@ body {
     background-position: 0 50%;
   }
 }
+@media (min-width: 600px) {
+  .about-me {
+    margin: 0 2.5rem;
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 900px) {
+  .about-me {
+    margin: 0 3.5rem;
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .about-me {
+    margin: 0 5.5rem;
+    font-size: 3.8rem;
+  }
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -598,6 +616,34 @@ body {
   padding: 1rem;
   gap: 0.5rem;
   background-color: var(--color-primary);
+}
+
+@media (min-width: 600px) {
+  .presentation {
+    height: 50vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 28, 48, 0.6), rgba(23, 107, 135, 0.8)), url("/images/programming-medium.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: none;
+  }
+}
+@media (min-width: 900px) {
+  .presentation {
+    height: 50vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 28, 48, 0.6), rgba(23, 107, 135, 0.8)), url("/images/programming-large.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: none;
+  }
+}
+@media (min-width: 1200px) {
+  .presentation {
+    height: 50vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 28, 48, 0.6), rgba(23, 107, 135, 0.8)), url("/images/programming.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
