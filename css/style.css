@@ -285,6 +285,14 @@ body {
   text-transform: uppercase;
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 2rem 0;
+  gap: 2rem;
+}
 .skills__computer-icon {
   height: 5rem;
   width: 5rem;
@@ -391,6 +399,90 @@ body {
     background-position: 85%;
   }
 }
+@media (min-width: 600px) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+  .skills__heading {
+    margin: 0;
+    grid-column: span 2;
+  }
+  .skills__computer-icon, .skills__language-icon {
+    display: none;
+  }
+  .card {
+    width: 70%;
+  }
+  .card__image {
+    height: 11rem;
+  }
+}
+@media (min-width: 900px) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+  .skills__heading {
+    margin: 0;
+    grid-column: span 3;
+  }
+  .skills__computer-icon, .skills__language-icon {
+    display: none;
+  }
+  .card {
+    width: 70%;
+  }
+  .card__image {
+    height: 11rem;
+  }
+}
+@media (min-width: 1200px) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+  .skills__heading {
+    margin: 0;
+    grid-column: span 4;
+  }
+  .skills__computer-icon, .skills__language-icon {
+    display: none;
+  }
+  .card {
+    width: 70%;
+  }
+  .card__image {
+    height: 11rem;
+  }
+}
+@media (min-width: 1800px) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+  .skills__heading {
+    margin: 0;
+    grid-column: span 5;
+  }
+  .skills__computer-icon, .skills__language-icon {
+    display: none;
+  }
+  .card {
+    width: 70%;
+  }
+  .card__image {
+    height: 11rem;
+  }
+}
 .form__text-input {
   display: flex;
   flex-direction: column;
@@ -468,15 +560,6 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  margin: 2rem 0;
-  gap: 2rem;
 }
 
 .form-section {
