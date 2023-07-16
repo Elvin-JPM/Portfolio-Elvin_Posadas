@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="nav">
         <div class="nav__search-bar">
           <div class="nav__logo">
@@ -35,16 +35,16 @@
           <div class="nav__menu__nav">
             <ul class="nav__menu__list">
               <li class="nav__menu__item">
-                <a href="#" class="nav__menu__link">About Me</a>
+                <a href="#presentation" class="nav__menu__link">About Me</a>
               </li>
               <li class="nav__menu__item">
-                <a href="#" class="nav__menu__link">Skills</a>
+                <a href="#skills" class="nav__menu__link">Skills</a>
               </li>
               <li class="nav__menu__item">
-                <a href="#" class="nav__menu__link">Sign Up</a>
+                <a href="#form" class="nav__menu__link">Sign Up</a>
               </li>
               <li class="nav__menu__item">
-                <a href="#" class="nav__menu__link">Contact Me</a>
+                <a href="#footer" class="nav__menu__link">Contact Me</a>
               </li>
             </ul>
           </div>
@@ -53,7 +53,7 @@
     </header>
 
     <main class="content">
-      <section class="presentation">
+      <section class="presentation" id="presentation">
         <div class="about-me">
           <p class="about-me__name">Hi, I'm Elvin</p>
           <div class="about-me__description">
@@ -64,7 +64,7 @@
         <div class="avatar"></div>
       </section>
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <img src="/images/desktop.png" alt="desktop computer" class="skills__computer-icon">
         <img src="/images/foreign-language.png" alt="desktop computer" class="skills__language-icon">
 
@@ -139,7 +139,7 @@
         </div>
       </section>
 
-      <section class="form-section">
+      <section class="form-section" id="form">
         <h2 class="form-section__heading">Sign Up</h2>
         <form action="" class="form">
 
@@ -159,7 +159,7 @@
           </div>
 
           <fieldset class="form_fieldset" >
-            <legend>How did we met?</legend>
+            <legend class="form__label">How did we met?</legend>
             <div class="form__radio-button">
               <input type="radio" id="college" name="meet" value="college" required>
               <label for="college">College</label>
@@ -179,18 +179,18 @@
           </fieldset>
 
           <div class="form__text-input form__github">
-              <label for="github_user">Github</label>
+              <label for="github_user" class="form__label">Github</label>
               <input type="text" class="form__input" id="github_user" name="meet" pattern="^@[^\s]+”" placeholder="@username">
           </div>
 
           <div class="form__text-input">
-              <label for="more_info">More info</label>
+              <label for="more_info" class="form__label">More info</label>
               <textarea name="more" class="form__textarea" id="more_info" cols="30" rows="10" maxlength="180" required></textarea>
           </div>
 
           <div class="form__checkbox">
               <input type="checkbox" id="newsletter">
-              <label for="newsletter">Subscribe to the newsletter</label>
+              <label for="newsletter" class="form__label">Subscribe to the newsletter</label>
           </div>
 
           <div class="form__buttons">
@@ -202,7 +202,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer__social">
 
         <a href="https://www.facebook.com">

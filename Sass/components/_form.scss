@@ -73,3 +73,56 @@
     );
   }
 }
+
+@media (min-width: 600px) {
+  .form {
+    width: 45%;
+    &__label {
+      font-size: .8rem;
+      color: white;
+    }
+
+    &__input {
+      height: 2.5rem;
+    }
+
+    &__textarea {
+      max-width: 100%;
+      border-radius: 3px;
+      border: 1px solid var(--color-teal);
+      box-shadow: 1px 1px 4px 1px var(--color-teal);
+    }
+
+    &__radio-button {
+      gap: 0.4rem;
+      margin-bottom: .4rem;
+    }
+
+    &__checkbox {
+      gap: 0.5rem;
+    }
+
+    &__buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    &__button {
+      height: 2rem;
+      width: 4.2rem;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .form {
+      width: 30%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .form {
+      width: 30%;
+  }
+}
