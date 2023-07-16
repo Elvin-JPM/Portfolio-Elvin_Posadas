@@ -409,6 +409,7 @@ body {
   background-position: 85%;
   animation: ge-progress-bar-animation 1s linear;
 }
+
 @keyframes css-progress-bar-animation {
   0% {
     background-position: 100%;
